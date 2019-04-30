@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6. --><WL5G3N0:definitions xmlns="" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:search="http://xmlns.oracle.com/AgileObjects/Core/Search/V1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Search/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SearchService" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Search/V1">
+  <jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+    <jaxws:package name="com.agile.ws.service.search.v1.jaxws"/>
+    <jaxws:enableWrapperStyle>true</jaxws:enableWrapperStyle>
+    <jaxws:enableAsyncMapping>false</jaxws:enableAsyncMapping>
+  </jaxws:bindings>
+  <xsd:annotation>
+    <xsd:documentation>
+            Search service has the methods exposed for Search of Agile Objects.
+        </xsd:documentation>
+  </xsd:annotation>
+  <WL5G3N0:types>
+    <xsd:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:search="http://xmlns.oracle.com/AgileObjects/Core/Search/V1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Search/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Search/V1">
+      <xsd:import namespace="http://xmlns.oracle.com/AgileObjects/Core/Search/V1" schemaLocation="http://agile.us.cray.com:80/CoreService/services/Search?xsd=3"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="quickSearch">
+    <WL5G3N0:part element="search:quickSearch" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="quickSearchResponse">
+    <WL5G3N0:part element="search:quickSearchResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="advancedSearch">
+    <WL5G3N0:part element="search:advancedSearch" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="advancedSearchResponse">
+    <WL5G3N0:part element="search:advancedSearchResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getSearchableAttributes">
+    <WL5G3N0:part element="search:getSearchableAttributes" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getSearchableAttributesResponse">
+    <WL5G3N0:part element="search:getSearchableAttributesResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getSearchableClasses">
+    <WL5G3N0:part element="search:getSearchableClasses" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getSearchableClassesResponse">
+    <WL5G3N0:part element="search:getSearchableClassesResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="createQuery">
+    <WL5G3N0:part element="search:createQuery" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="createQueryResponse">
+    <WL5G3N0:part element="search:createQueryResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="loadQuery">
+    <WL5G3N0:part element="search:loadQuery" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="loadQueryResponse">
+    <WL5G3N0:part element="search:loadQueryResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="executeSavedQuery">
+    <WL5G3N0:part element="search:executeSavedQuery" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="executeSavedQueryResponse">
+    <WL5G3N0:part element="search:executeSavedQueryResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="saveAsQuery">
+    <WL5G3N0:part element="search:saveAsQuery" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="saveAsQueryResponse">
+    <WL5G3N0:part element="search:saveAsQueryResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateQuery">
+    <WL5G3N0:part element="search:updateQuery" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateQueryResponse">
+    <WL5G3N0:part element="search:updateQueryResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="deleteQuery">
+    <WL5G3N0:part element="search:deleteQuery" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="deleteQueryResponse">
+    <WL5G3N0:part element="search:deleteQueryResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="SearchService">
+    <WL5G3N0:operation name="quickSearch">
+      <WL5G3N0:input message="tns:quickSearch"/>
+      <WL5G3N0:output message="tns:quickSearchResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="advancedSearch">
+      <WL5G3N0:input message="tns:advancedSearch"/>
+      <WL5G3N0:output message="tns:advancedSearchResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getSearchableAttributes">
+      <WL5G3N0:input message="tns:getSearchableAttributes"/>
+      <WL5G3N0:output message="tns:getSearchableAttributesResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getSearchableClasses">
+      <WL5G3N0:input message="tns:getSearchableClasses"/>
+      <WL5G3N0:output message="tns:getSearchableClassesResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="createQuery">
+      <WL5G3N0:input message="tns:createQuery"/>
+      <WL5G3N0:output message="tns:createQueryResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="loadQuery">
+      <WL5G3N0:input message="tns:loadQuery"/>
+      <WL5G3N0:output message="tns:loadQueryResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="executeSavedQuery">
+      <WL5G3N0:input message="tns:executeSavedQuery"/>
+      <WL5G3N0:output message="tns:executeSavedQueryResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="saveAsQuery">
+      <WL5G3N0:input message="tns:saveAsQuery"/>
+      <WL5G3N0:output message="tns:saveAsQueryResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateQuery">
+      <WL5G3N0:input message="tns:updateQuery"/>
+      <WL5G3N0:output message="tns:updateQueryResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="deleteQuery">
+      <WL5G3N0:input message="tns:deleteQuery"/>
+      <WL5G3N0:output message="tns:deleteQueryResponse"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="Search_Binding" type="tns:SearchService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="quickSearch">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="advancedSearch">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getSearchableAttributes">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getSearchableClasses">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="createQuery">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="loadQuery">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="executeSavedQuery">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="saveAsQuery">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateQuery">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="deleteQuery">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="SearchService">
+    <WL5G3N0:port binding="tns:Search_Binding" name="Search">
+      <soap:address location="http://agile.us.cray.com:80/CoreService/services/Search"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

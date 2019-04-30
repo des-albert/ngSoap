@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6. --><WL5G3N0:definitions xmlns="" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:business="http://xmlns.oracle.com/AgileObjects/Core/Business/V1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Business/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BusinessObjectService" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Business/V1">
+  <jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+    <jaxws:package name="com.agile.ws.service.business.v1.jaxws"/>
+    <jaxws:enableWrapperStyle>true</jaxws:enableWrapperStyle>
+    <jaxws:enableAsyncMapping>false</jaxws:enableAsyncMapping>
+  </jaxws:bindings>
+  <WL5G3N0:types>
+    <xsd:schema xmlns:business="http://xmlns.oracle.com/AgileObjects/Core/Business/V1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Business/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Business/V1">
+      <xsd:import namespace="http://xmlns.oracle.com/AgileObjects/Core/Business/V1" schemaLocation="http://agile.us.cray.com:80/CoreService/services/BusinessObject?xsd=3"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="createObject">
+    <WL5G3N0:part element="business:createObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="createObjectResponse">
+    <WL5G3N0:part element="business:createObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getObject">
+    <WL5G3N0:part element="business:getObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getObjectResponse">
+    <WL5G3N0:part element="business:getObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getThumbnail">
+    <WL5G3N0:part element="business:getThumbnail" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getThumbnailResponse">
+    <WL5G3N0:part element="business:getThumbnailResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateObject">
+    <WL5G3N0:part element="business:updateObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateObjectResponse">
+    <WL5G3N0:part element="business:updateObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="deleteObject">
+    <WL5G3N0:part element="business:deleteObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="deleteObjectResponse">
+    <WL5G3N0:part element="business:deleteObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="undeleteObject">
+    <WL5G3N0:part element="business:undeleteObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="undeleteObjectResponse">
+    <WL5G3N0:part element="business:undeleteObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="isDeletedObject">
+    <WL5G3N0:part element="business:isDeletedObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="isDeletedObjectResponse">
+    <WL5G3N0:part element="business:isDeletedObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="sendObject">
+    <WL5G3N0:part element="business:sendObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="sendObjectResponse">
+    <WL5G3N0:part element="business:sendObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="saveAsObject">
+    <WL5G3N0:part element="business:saveAsObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="saveAsObjectResponse">
+    <WL5G3N0:part element="business:saveAsObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkPrivilege">
+    <WL5G3N0:part element="business:checkPrivilege" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkPrivilegeResponse">
+    <WL5G3N0:part element="business:checkPrivilegeResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getSubscriptions">
+    <WL5G3N0:part element="business:getSubscriptions" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getSubscriptionsResponse">
+    <WL5G3N0:part element="business:getSubscriptionsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="modifySubscriptions">
+    <WL5G3N0:part element="business:modifySubscriptions" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="modifySubscriptionsResponse">
+    <WL5G3N0:part element="business:modifySubscriptionsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="BusinessObject_PortType">
+    <WL5G3N0:operation name="createObject">
+      <WL5G3N0:documentation>
+	  The createObject webservice operation creates a specific Agile object in the
+	  Agile PLM system. The object specifications are detailed in the request object 
+	  where the class type, unique object number and other primary data may be configured,
+	  apart from more specifc options  for the created object. Success of the operation
+	  may be verified using the status code in the response object.	
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:createObject"/>
+      <WL5G3N0:output message="tns:createObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getObject">
+      <WL5G3N0:documentation>
+	  The getObject webservice operation is used to retrieve a specific Agile object in 
+	  the Agile PLM system. The specifications of the object to be retrieved are detailed
+	  in the request object  where the class type, unique object number and relevant data
+	  may be specified. Comprehensive information about the object is retrieved in the
+	  response object after successful execution of the webservice call.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getObject"/>
+      <WL5G3N0:output message="tns:getObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getThumbnail">
+      <WL5G3N0:documentation>
+	  The getThumbnail webservice operation is used to retrieve the thumbnail urls of a 
+	  specific Agile object in the Agile PLM system. 
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getThumbnail"/>
+      <WL5G3N0:output message="tns:getThumbnailResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateObject">
+      <WL5G3N0:documentation>
+	  The updateObject webservice operation updates a specific Agile object in the
+	  Agile PLM system. The revised object specifications are detailed in the request object 
+	  where data specific to an Agile object may be expressed. Success of the operation
+	  may be verified using the status code in the response object.	
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:updateObject"/>
+      <WL5G3N0:output message="tns:updateObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="deleteObject">
+      <WL5G3N0:documentation>
+	  The deleteObject webservice operation deletes a specific Agile object in the
+	  Agile PLM system. The specifications of the object to be deleted are detailed
+	  in the request object. Success of the operation may be verified using the
+	  status code in the response object.		  
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:deleteObject"/>
+      <WL5G3N0:output message="tns:deleteObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="undeleteObject">
+      <WL5G3N0:documentation>
+	  The deleteObject webservice operation revokes the deleted status of a specific
+	  Agile object that was previously deleted from the Agile PLM system. The
+	  specifications of the object to be deleted are detailed in the request object.
+	  Success of the operation may be verified using the status code in the response object.		  
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:undeleteObject"/>
+      <WL5G3N0:output message="tns:undeleteObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="isDeletedObject">
+      <WL5G3N0:documentation>
+	  The undeleteObject webservice operation checks whether a specific Agile object in the
+	  Agile PLM system has been deleted. The object specifications are detailed in the request
+	  object  where the class type, unique object number may be specified. From the response 
+	  object, it is possible to ascertain whether the Agile object queried for still exists in
+	  Agile PLM or if it was previously deleted.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:isDeletedObject"/>
+      <WL5G3N0:output message="tns:isDeletedObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="sendObject">
+      <WL5G3N0:documentation>
+	  The sendObject webservice operation is used to send a specific Agile object. The object
+	  specifications of the object to be sent are detailed in the request object. Success of
+	  the operation may be verified using the status code in the response object.	
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:sendObject"/>
+      <WL5G3N0:output message="tns:sendObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="saveAsObject">
+      <WL5G3N0:documentation>
+	  The saveAsObject webservice operation saves a specific Agile object as another new object
+	  in the Agile PLM system. The object specifications are detailed in the request object 
+	  where the class type, unique object number and other primary data may be specified. The
+	  response object contains information identifying the object that was saved. Success of the
+	  operation may be verified using the status code in the response object.	
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:saveAsObject"/>
+      <WL5G3N0:output message="tns:saveAsObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkPrivilege">
+      <WL5G3N0:documentation>
+	  The checkPrivilege webservice operation checks whether a specific Agile user holds the privileges to perform a specific action in the Agile PLM system. The user and privilege specifications are detailed in the request object. The response object confirms whether or not the specified agile user has the privilege to perform the webservice operation.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:checkPrivilege"/>
+      <WL5G3N0:output message="tns:checkPrivilegeResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getSubscriptions">
+      <WL5G3N0:documentation>
+	  The getSubscriptions webservice operation retrives the subscriptions for a specific data object in the Agile PLM system. The data object
+	  specifications are detailed in the request object. The response object will contain the details of the subscriptions.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getSubscriptions"/>
+      <WL5G3N0:output message="tns:getSubscriptionsResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="modifySubscriptions">
+      <WL5G3N0:documentation>
+	  The modifySubscriptions webservice operation retrives the subscriptions for a specific data object in the Agile PLM system. The data object and subscriptions specifications are detailed in the request object. The response object will contain the details of the subscriptions.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:modifySubscriptions"/>
+      <WL5G3N0:output message="tns:modifySubscriptionsResponse"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="BusinessObject_Binding" type="tns:BusinessObject_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="createObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getThumbnail">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="deleteObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="undeleteObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="isDeletedObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="sendObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="saveAsObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkPrivilege">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getSubscriptions">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="modifySubscriptions">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="BusinessObjectService">
+    <WL5G3N0:port binding="tns:BusinessObject_Binding" name="BusinessObject">
+      <soap:address location="http://agile.us.cray.com:80/CoreService/services/BusinessObject"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

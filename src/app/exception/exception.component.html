@@ -1,0 +1,66 @@
+<div class="container">
+  <div class="row">
+    <!--
+          Tasks
+    -->
+    <h2 class="text-info">
+      Exception Tasks
+    </h2>
+    <div *ngIf="tasks">
+      <table class="table table-hover table-striped">
+        <thead>
+        <tr>
+          <th (click)="sort('ExceptionNumber')">
+            Number
+          </th>
+          <th (click)="sort('Name')">
+            Description
+          </th>
+          <th (click)="sort('Subject')">
+            Subject
+          </th>
+          <th (click)="sort('Status')">
+            Status
+          </th>
+          <th (click)="sort('Exception_Agile_ECO_MCO__c')">
+            Change Number
+          </th>
+          <th (click)="sort('ECO_MCO_status')">
+            Change Status
+          </th>
+          <th (click)="sort('OpportunityName')">
+            Opportunity
+          </th>
+          <th (click)="sort('CustomCodes')">
+            Codes
+          </th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let task of sortedTasks()">
+          <td>{{ task.ExceptionNumber }}</td>
+          <td>
+            <a href="https://cray.my.salesforce.com/{{ task.ExceptionId }}" >
+              {{ task.Name }}
+            </a>
+          </td>
+          <td>{{ task.Subject }}</td>
+          <td>{{ task.Status }}</td>
+          <td>{{ task.Exception_Agile_ECO_MCO__c }}</td>
+          <td>{{ task.ECO_MCO_status }}</td>
+          <td>{{ task.OpportunityName }}</td>
+          <td>{{ task.CustomCodes }}</td>
+          <td>
+            <button
+              class="btn btn-warning"
+              (click)="taskComplete( task.Id )">
+              Complete
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

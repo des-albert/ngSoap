@@ -1,0 +1,57 @@
+<div class="container">
+  <p></p>
+  <h3>Salesforce & Agile Login</h3>
+  <form (ngSubmit)="onLogin()">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Salesforce user name : </label>
+            <input name="sfdcName"
+                   [(ngModel)]="sfdcName"
+              class="form-control"
+              type="text">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Salesforce Security Token :  </label>
+            <input name="token"
+              [(ngModel)]="token"
+              class="form-control"
+              type="password">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Password :  </label>
+          <input name="password"
+                 [(ngModel)]="password"
+                 class="form-control"
+                 type="password">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Agile user name :  </label>
+          <input name="agileName"
+                 [(ngModel)]="agileName"
+                 class="form-control"
+                 type="text">
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="form-group">
+      <button
+        class="btn btn-primary">
+        Login
+      </button>
+    </div>
+  </form>
+</div>

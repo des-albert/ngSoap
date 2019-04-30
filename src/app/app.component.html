@@ -1,0 +1,62 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarColor01"
+      aria-controls="navbarColor01"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      id="navbarColor01"
+      class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li>
+          <img src="../assets/Cray_Logo.png"/>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/opportunities"
+             routerLinkActive="active"
+             class="nav-link">
+            Opportunities
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/exceptions"
+             routerLinkActive="active"
+             class="nav-link">
+            Exceptions
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="/about"
+             class="nav-link">
+            About
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-right">
+        <div *ngIf="getItem('sfdcName'); else loggedIn">
+          <li class="nav-item">
+            <a routerLink="/login" class="nav-link">
+            Current User: {{ getItem('sfdcName') }}
+          </a>
+
+          </li>
+        </div>
+        <ng-template #loggedIn>
+          <li class="nav-item">
+            <a routerLink="/login" class="nav-link"> Login </a>
+          </li>
+        </ng-template>
+      </ul>
+    </div>
+  </nav>
+</div>
+<main>
+  <router-outlet></router-outlet>
+</main>

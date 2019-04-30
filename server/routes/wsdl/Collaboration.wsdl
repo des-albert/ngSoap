@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6. --><WL5G3N0:definitions xmlns="" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:collaboration="http://xmlns.oracle.com/AgileObjects/Core/Collaboration/V1" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Collaboration/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CollaborationService" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Collaboration/V1">
+  <jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+    <jaxws:package name="com.agile.ws.service.collaboration.v1.jaxws"/>
+    <jaxws:enableWrapperStyle>true</jaxws:enableWrapperStyle>
+    <jaxws:enableAsyncMapping>false</jaxws:enableAsyncMapping>
+  </jaxws:bindings>
+  <xsd:annotation>
+    <xsd:documentation>
+         Collaboration service has the methods exposed for change management.
+    </xsd:documentation>
+  </xsd:annotation>
+  <WL5G3N0:types>
+    <xsd:schema xmlns:collaboration="http://xmlns.oracle.com/AgileObjects/Core/Collaboration/V1" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Collaboration/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Collaboration/V1">
+      <xsd:import namespace="http://xmlns.oracle.com/AgileObjects/Core/Collaboration/V1" schemaLocation="http://agile.us.cray.com:80/CoreService/services/Collaboration?xsd=2"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="getWorkFlows">
+    <WL5G3N0:part element="collaboration:getWorkFlows" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getWorkFlowsResponse">
+    <WL5G3N0:part element="collaboration:getWorkFlowsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getStatus">
+    <WL5G3N0:part element="collaboration:getStatus" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getStatusResponse">
+    <WL5G3N0:part element="collaboration:getStatusResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="auditRObject">
+    <WL5G3N0:part element="collaboration:auditRObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="auditRObjectResponse">
+    <WL5G3N0:part element="collaboration:auditRObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getApprovers">
+    <WL5G3N0:part element="collaboration:getApprovers" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getApproversResponse">
+    <WL5G3N0:part element="collaboration:getApproversResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="changeStatus">
+    <WL5G3N0:part element="collaboration:changeStatus" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="changeStatusResponse">
+    <WL5G3N0:part element="collaboration:changeStatusResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="approveRObject">
+    <WL5G3N0:part element="collaboration:approveRObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="approveRObjectResponse">
+    <WL5G3N0:part element="collaboration:approveRObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="rejectRObject">
+    <WL5G3N0:part element="collaboration:rejectRObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="rejectRObjectResponse">
+    <WL5G3N0:part element="collaboration:rejectRObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="acknowledgeRObject">
+    <WL5G3N0:part element="collaboration:acknowledgeRObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="acknowledgeRObjectResponse">
+    <WL5G3N0:part element="collaboration:acknowledgeRObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="setWorkFlow">
+    <WL5G3N0:part element="collaboration:setWorkFlow" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="setWorkFlowResponse">
+    <WL5G3N0:part element="collaboration:setWorkFlowResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addApprovers">
+    <WL5G3N0:part element="collaboration:addApprovers" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addApproversResponse">
+    <WL5G3N0:part element="collaboration:addApproversResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="removeApprovers">
+    <WL5G3N0:part element="collaboration:removeApprovers" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="removeApproversResponse">
+    <WL5G3N0:part element="collaboration:removeApproversResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="commentRObject">
+    <WL5G3N0:part element="collaboration:commentRObject" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="commentRObjectResponse">
+    <WL5G3N0:part element="collaboration:commentRObjectResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAllReviewers">
+    <WL5G3N0:part element="collaboration:getAllReviewers" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAllReviewersResponse">
+    <WL5G3N0:part element="collaboration:getAllReviewersResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getReviewers">
+    <WL5G3N0:part element="collaboration:getReviewers" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getReviewersResponse">
+    <WL5G3N0:part element="collaboration:getReviewersResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addReviewers">
+    <WL5G3N0:part element="collaboration:addReviewers" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addReviewersResponse">
+    <WL5G3N0:part element="collaboration:addReviewersResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="removeReviewers">
+    <WL5G3N0:part element="collaboration:removeReviewers" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="removeReviewersResponse">
+    <WL5G3N0:part element="collaboration:removeReviewersResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="Collaboration_PortType">
+    <WL5G3N0:operation name="getWorkFlows">
+      <WL5G3N0:input message="tns:getWorkFlows"/>
+      <WL5G3N0:output message="tns:getWorkFlowsResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getStatus">
+      <WL5G3N0:input message="tns:getStatus"/>
+      <WL5G3N0:output message="tns:getStatusResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="auditRObject">
+      <WL5G3N0:input message="tns:auditRObject"/>
+      <WL5G3N0:output message="tns:auditRObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getApprovers">
+      <WL5G3N0:input message="tns:getApprovers"/>
+      <WL5G3N0:output message="tns:getApproversResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="changeStatus">
+      <WL5G3N0:input message="tns:changeStatus"/>
+      <WL5G3N0:output message="tns:changeStatusResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="approveRObject">
+      <WL5G3N0:input message="tns:approveRObject"/>
+      <WL5G3N0:output message="tns:approveRObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="rejectRObject">
+      <WL5G3N0:input message="tns:rejectRObject"/>
+      <WL5G3N0:output message="tns:rejectRObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="acknowledgeRObject">
+      <WL5G3N0:input message="tns:acknowledgeRObject"/>
+      <WL5G3N0:output message="tns:acknowledgeRObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="setWorkFlow">
+      <WL5G3N0:input message="tns:setWorkFlow"/>
+      <WL5G3N0:output message="tns:setWorkFlowResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addApprovers">
+      <WL5G3N0:input message="tns:addApprovers"/>
+      <WL5G3N0:output message="tns:addApproversResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="removeApprovers">
+      <WL5G3N0:input message="tns:removeApprovers"/>
+      <WL5G3N0:output message="tns:removeApproversResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="commentRObject">
+      <WL5G3N0:input message="tns:commentRObject"/>
+      <WL5G3N0:output message="tns:commentRObjectResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getAllReviewers">
+      <WL5G3N0:input message="tns:getAllReviewers"/>
+      <WL5G3N0:output message="tns:getAllReviewersResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getReviewers">
+      <WL5G3N0:input message="tns:getReviewers"/>
+      <WL5G3N0:output message="tns:getReviewersResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addReviewers">
+      <WL5G3N0:input message="tns:addReviewers"/>
+      <WL5G3N0:output message="tns:addReviewersResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="removeReviewers">
+      <WL5G3N0:input message="tns:removeReviewers"/>
+      <WL5G3N0:output message="tns:removeReviewersResponse"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="Collaboration_Binding" type="tns:Collaboration_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="getWorkFlows">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getStatus">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="auditRObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getApprovers">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="changeStatus">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="approveRObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="rejectRObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="acknowledgeRObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="setWorkFlow">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addApprovers">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="removeApprovers">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="commentRObject">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getAllReviewers">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getReviewers">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addReviewers">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="removeReviewers">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="CollaborationService">
+    <WL5G3N0:port binding="tns:Collaboration_Binding" name="Collaboration">
+      <soap:address location="http://agile.us.cray.com:80/CoreService/services/Collaboration"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

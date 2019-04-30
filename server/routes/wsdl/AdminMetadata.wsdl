@@ -1,0 +1,437 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6. --><WL5G3N0:definitions xmlns="" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:metadata="http://xmlns.oracle.com/AgileObjects/Core/AdminMetadata/V1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/AdminMetadata/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AdminMetadataService" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/AdminMetadata/V1">
+  <jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+    <jaxws:package name="com.agile.ws.service.metadata.v1.jaxws"/>
+    <jaxws:enableWrapperStyle>true</jaxws:enableWrapperStyle>
+    <jaxws:enableAsyncMapping>false</jaxws:enableAsyncMapping>
+  </jaxws:bindings>
+  <xsd:annotation>
+    <xsd:documentation>Admin Metadata Service for looking up metadata
+                       information from Agile PLM</xsd:documentation>
+  </xsd:annotation>
+  <WL5G3N0:types>
+    <xsd:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:metadata="http://xmlns.oracle.com/AgileObjects/Core/AdminMetadata/V1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/AdminMetadata/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/AdminMetadata/V1">
+      <xsd:import namespace="http://xmlns.oracle.com/AgileObjects/Core/AdminMetadata/V1" schemaLocation="http://agile.us.cray.com:80/CoreService/services/AdminMetadata?xsd=1"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="getAllClasses">
+    <WL5G3N0:part element="metadata:getAllClasses" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAllClassesResponse">
+    <WL5G3N0:part element="metadata:getAllClassesResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getSubClasses">
+    <WL5G3N0:part element="metadata:getSubClasses" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getSubClassesResponse">
+    <WL5G3N0:part element="metadata:getSubClassesResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getNode">
+    <WL5G3N0:part element="metadata:getNode" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getNodeResponse">
+    <WL5G3N0:part element="metadata:getNodeResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getLists">
+    <WL5G3N0:part element="metadata:getLists" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getListsResponse">
+    <WL5G3N0:part element="metadata:getListsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAttributes">
+    <WL5G3N0:part element="metadata:getAttributes" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAttributesResponse">
+    <WL5G3N0:part element="metadata:getAttributesResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getTableMetadata">
+    <WL5G3N0:part element="metadata:getTableMetadata" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getTableMetadataResponse">
+    <WL5G3N0:part element="metadata:getTableMetadataResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAutoNumbers">
+    <WL5G3N0:part element="metadata:getAutoNumbers" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAutoNumbersResponse">
+    <WL5G3N0:part element="metadata:getAutoNumbersResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getUsers">
+    <WL5G3N0:part element="metadata:getUsers" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getUsersResponse">
+    <WL5G3N0:part element="metadata:getUsersResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getUserGroups">
+    <WL5G3N0:part element="metadata:getUserGroups" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getUserGroupsResponse">
+    <WL5G3N0:part element="metadata:getUserGroupsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="convertCurrency">
+    <WL5G3N0:part element="metadata:convertCurrency" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="convertCurrencyResponse">
+    <WL5G3N0:part element="metadata:convertCurrencyResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="changeLoginPassword">
+    <WL5G3N0:part element="metadata:changeLoginPassword" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="changeLoginPasswordResponse">
+    <WL5G3N0:part element="metadata:changeLoginPasswordResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="changeApprovalPassword">
+    <WL5G3N0:part element="metadata:changeApprovalPassword" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="changeApprovalPasswordResponse">
+    <WL5G3N0:part element="metadata:changeApprovalPasswordResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="createTransferAuthority">
+    <WL5G3N0:part element="metadata:createTransferAuthority" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="createTransferAuthorityResponse">
+    <WL5G3N0:part element="metadata:createTransferAuthorityResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getTransferAuthority">
+    <WL5G3N0:part element="metadata:getTransferAuthority" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getTransferAuthorityResponse">
+    <WL5G3N0:part element="metadata:getTransferAuthorityResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ModifyTransferAuthority">
+    <WL5G3N0:part element="metadata:ModifyTransferAuthority" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ModifyTransferAuthorityResponse">
+    <WL5G3N0:part element="metadata:ModifyTransferAuthorityResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="removeTransferAuthority">
+    <WL5G3N0:part element="metadata:removeTransferAuthority" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="removeTransferAuthorityResponse">
+    <WL5G3N0:part element="metadata:removeTransferAuthorityResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAgileClass">
+    <WL5G3N0:part element="metadata:getAgileClass" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getAgileClassResponse">
+    <WL5G3N0:part element="metadata:getAgileClassResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="AdminMetadata_PortType">
+    <WL5G3N0:operation name="getAllClasses">
+      <WL5G3N0:documentation>
+	  The getAllClasses webservice operation retrives all Agile classes from the PLM
+	  system. The class filteration details are specified in the request object. A 
+	  list of Agile classes retrieved as per the filter is obtained in the response.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getAllClasses"/>
+      <WL5G3N0:output message="tns:getAllClassesResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getSubClasses">
+      <WL5G3N0:documentation>
+	  The getAllClasses webservice operation retrives all Agile sub classes for a given
+	  base class in Agile PLM. The request object contains relevant details for the same.
+	  A list of Agile subclasses classes are obtained in the response.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getSubClasses"/>
+      <WL5G3N0:output message="tns:getSubClassesResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getNode">
+      <WL5G3N0:documentation>
+	  The getNode webservice operation retrives Agile nodes for a given node identifier. 
+	  The request object consists of a node identifier and an option to enable recursive 
+	  retrieval of nodes. The response contains the node queried for in the form of an
+	  AdminNodeType object. Child nodes (if available) may be recursively fetched from
+	  this node.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getNode"/>
+      <WL5G3N0:output message="tns:getNodeResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getLists">
+      <WL5G3N0:documentation>
+	  The getLists webservice operation retrives Agile lists for a given list identifier. 
+	  The request object consists of a list identifier with which the list to be retrieved
+	  is specified. The lists retrieved are AdminListType objects from the response.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getLists"/>
+      <WL5G3N0:output message="tns:getListsResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getAttributes">
+      <WL5G3N0:documentation>
+	  The getAttributes webservice operation retrives Agile attributes for a particular class
+	  and attribute identifier. The attributes are obtained in the form of AttributeType objects
+	  in the response.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getAttributes"/>
+      <WL5G3N0:output message="tns:getAttributesResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getTableMetadata">
+      <WL5G3N0:documentation>
+	  The getTableMetadata webservice operation retrives metadata information about an Agile table
+	  in the PLM, given details identifying the table. The request object consists of a class identifier
+	  and a table identifier. The table metadata information is obtained through the response
+	  in the form of attribute type objects.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getTableMetadata"/>
+      <WL5G3N0:output message="tns:getTableMetadataResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getAutoNumbers">
+      <WL5G3N0:documentation>
+	  The getAutoNumbers webservice operation retrives a suitable autonumber for an Agile object given
+	  class and autonumber identifiers. The autonumber for the object fetched by the webservice is
+	  obtained through the response in the form of AutoNumberType objects.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getAutoNumbers"/>
+      <WL5G3N0:output message="tns:getAutoNumbersResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getUsers">
+      <WL5G3N0:documentation>
+	  The getUsers webservice operation retrives information about users in Agile PLM. The request
+	  does not contain any element. The list of users fetched by the webservice is obtained through
+	  the response as AgileUserType objects
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getUsers"/>
+      <WL5G3N0:output message="tns:getUsersResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getUserGroups">
+      <WL5G3N0:documentation>
+	  The getUserGroups webservice operation retrives information about users groups in Agile PLM.
+	  The request does not contain any element. A list of user groups fetched by the webservice is
+	  obtained through the response as AgileUserGroupType objects.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getUserGroups"/>
+      <WL5G3N0:output message="tns:getUserGroupsResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="convertCurrency">
+      <WL5G3N0:documentation>
+	  The convertCurrency webservice operation is used to convert a certain amount of money
+	  to from one form of currency to another. The request object consists of money, date
+	  and currency input. The converted currency is obtained through the response object.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:convertCurrency"/>
+      <WL5G3N0:output message="tns:convertCurrencyResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="changeLoginPassword">
+      <WL5G3N0:documentation>
+	  The changeLoginPassword webservice operation is used to change the login password
+	  for an Agile user. User identifier and new password information is supplied in the request.
+	  If the current user's password is to be reset then the old password must also be specified.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:changeLoginPassword"/>
+      <WL5G3N0:output message="tns:changeLoginPasswordResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="changeApprovalPassword">
+      <WL5G3N0:documentation>
+	  The changeApprovalPassword webservice operation is used to change the approval password
+	  for an Agile user. User identifier and new password information is supplied in the request.
+	  If the current user's approval password is to be reset then the old approval password must
+	  also be specified.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:changeApprovalPassword"/>
+      <WL5G3N0:output message="tns:changeApprovalPasswordResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="createTransferAuthority">
+      <WL5G3N0:documentation>
+	  The createTransferAuthority webservice operation is used to create a transfer authority
+	  record from an Agile user to another. The request contains information about the user from whom
+	  the authority is transferred and the user to whom the authority will be granted, the dates from and
+	  up to which the transfer is effective and the criteria identifying the authority to be transferred. 
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:createTransferAuthority"/>
+      <WL5G3N0:output message="tns:createTransferAuthorityResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getTransferAuthority">
+      <WL5G3N0:documentation>
+	  The getTransferAuthority webservice operation is used to retrieve a transfer authority
+	  record from the transfer authority record manager. A criteria identifying the authority 
+	  to be retrieved is specified in the request. 
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getTransferAuthority"/>
+      <WL5G3N0:output message="tns:getTransferAuthorityResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ModifyTransferAuthority">
+      <WL5G3N0:documentation>
+	  The ModifyTransferAuthority webservice operation is used to retrieve a transfer authority
+	  record from the transfer authority record manager. A criteria identifying the authority 
+	  to be retrieved is specified in the request. 
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:ModifyTransferAuthority"/>
+      <WL5G3N0:output message="tns:ModifyTransferAuthorityResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="removeTransferAuthority">
+      <WL5G3N0:documentation>
+	  The removeTransferAuthority webservice operation is used to remove a transfer authority
+	  record from the transfer authority record manager. A criteria identifying the authority 
+	  to be retrieved is specified in the request. 
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:removeTransferAuthority"/>
+      <WL5G3N0:output message="tns:removeTransferAuthorityResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getAgileClass">
+      <WL5G3N0:documentation>
+	  The getAgileClass webservice operation retrives an Agile classes from the PLM system given the Agile Class Identifiers. A ClassType with the details of the Agile class is obtained in the response.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getAgileClass"/>
+      <WL5G3N0:output message="tns:getAgileClassResponse"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="AdminMetadata_Binding" type="tns:AdminMetadata_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="getAllClasses">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getSubClasses">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getNode">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getLists">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getAttributes">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getTableMetadata">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getAutoNumbers">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getUsers">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getUserGroups">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="convertCurrency">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="changeLoginPassword">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="changeApprovalPassword">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="createTransferAuthority">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getTransferAuthority">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="ModifyTransferAuthority">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="removeTransferAuthority">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getAgileClass">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body parts="parameters" use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="AdminMetadataService">
+    <WL5G3N0:port binding="tns:AdminMetadata_Binding" name="AdminMetadata">
+      <soap:address location="http://agile.us.cray.com:80/CoreService/services/AdminMetadata"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

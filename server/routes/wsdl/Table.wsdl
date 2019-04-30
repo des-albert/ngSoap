@@ -1,0 +1,179 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6. --><WL5G3N0:definitions xmlns="" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:table="http://xmlns.oracle.com/AgileObjects/Core/Table/V1" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Table/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TableService" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Table/V1">
+  <jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+    <jaxws:package name="com.agile.ws.service.table.v1.jaxws"/>
+    <jaxws:enableWrapperStyle>true</jaxws:enableWrapperStyle>
+    <jaxws:enableAsyncMapping>false</jaxws:enableAsyncMapping>
+  </jaxws:bindings>
+  <xsd:annotation>
+    <xsd:documentation>
+         Table service has the methods exposed for SDK ITable operations.
+    </xsd:documentation>
+  </xsd:annotation>
+  <WL5G3N0:types>
+    <xsd:schema xmlns:jaxb="http://java.sun.com/xml/ns/jaxb" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:table="http://xmlns.oracle.com/AgileObjects/Core/Table/V1" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Table/V1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Table/V1">
+      <xsd:import namespace="http://xmlns.oracle.com/AgileObjects/Core/Table/V1" schemaLocation="http://agile.us.cray.com:80/CoreService/services/Table?xsd=3"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="isReadOnlyTable">
+    <WL5G3N0:part element="table:isReadOnlyTable" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="isReadOnlyTableResponse">
+    <WL5G3N0:part element="table:isReadOnlyTableResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="clearTable">
+    <WL5G3N0:part element="table:clearTable" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="clearTableResponse">
+    <WL5G3N0:part element="table:clearTableResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="copyTable">
+    <WL5G3N0:part element="table:copyTable" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="copyTableResponse">
+    <WL5G3N0:part element="table:copyTableResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addRows">
+    <WL5G3N0:part element="table:addRows" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addRowsResponse">
+    <WL5G3N0:part element="table:addRowsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateRows">
+    <WL5G3N0:part element="table:updateRows" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="updateRowsResponse">
+    <WL5G3N0:part element="table:updateRowsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="removeRows">
+    <WL5G3N0:part element="table:removeRows" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="removeRowsResponse">
+    <WL5G3N0:part element="table:removeRowsResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="loadTable">
+    <WL5G3N0:part element="table:loadTable" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="loadTableResponse">
+    <WL5G3N0:part element="table:loadTableResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="isFlagSet">
+    <WL5G3N0:part element="table:isFlagSet" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="isFlagSetResponse">
+    <WL5G3N0:part element="table:isFlagSetResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="Table_PortType">
+    <WL5G3N0:operation name="isReadOnlyTable">
+      <WL5G3N0:input message="tns:isReadOnlyTable"/>
+      <WL5G3N0:output message="tns:isReadOnlyTableResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="clearTable">
+      <WL5G3N0:input message="tns:clearTable"/>
+      <WL5G3N0:output message="tns:clearTableResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="copyTable">
+      <WL5G3N0:input message="tns:copyTable"/>
+      <WL5G3N0:output message="tns:copyTableResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addRows">
+      <WL5G3N0:input message="tns:addRows"/>
+      <WL5G3N0:output message="tns:addRowsResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateRows">
+      <WL5G3N0:input message="tns:updateRows"/>
+      <WL5G3N0:output message="tns:updateRowsResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="removeRows">
+      <WL5G3N0:input message="tns:removeRows"/>
+      <WL5G3N0:output message="tns:removeRowsResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="loadTable">
+      <WL5G3N0:input message="tns:loadTable"/>
+      <WL5G3N0:output message="tns:loadTableResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="isFlagSet">
+      <WL5G3N0:input message="tns:isFlagSet"/>
+      <WL5G3N0:output message="tns:isFlagSetResponse"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="Table_Binding" type="tns:Table_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="isReadOnlyTable">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="clearTable">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="copyTable">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addRows">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="updateRows">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="removeRows">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="loadTable">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="isFlagSet">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="TableService">
+    <WL5G3N0:port binding="tns:Table_Binding" name="Table">
+      <soap:address location="http://agile.us.cray.com:80/CoreService/services/Table"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

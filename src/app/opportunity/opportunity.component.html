@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <!--
+          Opportunities
+
+    -->
+    <h2 class="text-info">
+      Opportunities in SOPS Control
+    </h2>
+    <div *ngIf="opportunities">
+      <table class="table table-hover table-striped">
+        <thead>
+        <tr>
+          <th (click)="sort('Name')">Name</th>
+          <th (click)="sort('TaskStatus')">Status</th>
+          <th (click)="sort('TaskDueDate')">Due Date</th>
+          <th (click)="sort('Qualified_Quote__c')">Qualified Quote</th>
+          <th (click)="sort('Primary_Quote_Status__c')">Primary Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let opp of sortedOpps()">
+          <td>
+            <a :href="`https://cray.my.salesforce.com/${opp.Id}`">{{ opp.Name }}
+            </a>
+          </td>
+          <td>{{ opp.TaskStatus }}</td>
+          <td>{{ opp.TaskDueDate }}</td>
+          <td>{{ opp.Qualified_Quote__c }}</td>
+          <td>{{ opp.Primary_Quote_Status__c }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

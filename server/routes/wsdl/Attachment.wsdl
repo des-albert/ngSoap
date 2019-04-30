@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.10-b140319.1121 svn-revision#7b34660d6bc70e587e8ec81a17e4d76af68816a6. --><WL5G3N0:definitions xmlns="" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:attachment="http://xmlns.oracle.com/AgileObjects/Core/Attachment/V1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Attachment/V1" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wssutil="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AttachmentService" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Attachment/V1">
+  <wsp:Policy wssutil:Id="AttachmentService_MTOM_Policy">
+    <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+  </wsp:Policy>
+  <wsp1_2:Policy wssutil:Id="Mtom.xml">
+    <wsoma:OptimizedMimeSerialization xmlns:wsoma="http://schemas.xmlsoap.org/ws/2004/09/policy/optimizedmimeserialization"/>
+  </wsp1_2:Policy>
+  <wsp:UsingPolicy WL5G3N0:Required="true"/>
+  <jaxws:bindings xmlns:jaxws="http://java.sun.com/xml/ns/jaxws">
+    <jaxws:package name="com.agile.ws.service.attachment.v1.jaxws"/>
+    <jaxws:enableWrapperStyle>true</jaxws:enableWrapperStyle>
+    <jaxws:enableAsyncMapping>false</jaxws:enableAsyncMapping>
+  </jaxws:bindings>
+  <WL5G3N0:types>
+    <xsd:schema xmlns:attachment="http://xmlns.oracle.com/AgileObjects/Core/Attachment/V1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.oracle.com/AgileServices/Core/Attachment/V1" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wssutil="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xmlns.oracle.com/AgileServices/Core/Attachment/V1">
+      <xsd:import namespace="http://xmlns.oracle.com/AgileObjects/Core/Attachment/V1" schemaLocation="http://agile.us.cray.com:80/CoreService/services/Attachment?xsd=2"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="getFileFF">
+    <WL5G3N0:documentation>Request object for getFileFF operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:getFileFF" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getFileFFResponse">
+    <WL5G3N0:documentation>Response object for getFileFF operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:getFileFFResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getFileAttachment">
+    <WL5G3N0:documentation>Request object for getFileAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:getFileAttachment" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="getFileAttachmentResponse">
+    <WL5G3N0:documentation>Response object for getFileAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:getFileAttachmentResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addFileAttachment">
+    <WL5G3N0:documentation>Request object for addFileAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:addFileAttachment" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addFileAttachmentResponse">
+    <WL5G3N0:documentation>Response object for addFileAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:addFileAttachmentResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkOutFF">
+    <WL5G3N0:documentation>Request object for checkOutFF operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:checkOutFF" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkOutFFResponse">
+    <WL5G3N0:documentation>Response object for checkOutFF operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:checkOutFFResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkInFF">
+    <WL5G3N0:documentation>Request object for checkInFF operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:checkInFF" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkInFFResponse">
+    <WL5G3N0:documentation>Response object for checkInFF operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:checkInFFResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="cancelCheckOutFF">
+    <WL5G3N0:documentation>Request object for cancelCheckOutFF operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:cancelCheckOutFF" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="cancelCheckOutFFResponse">
+    <WL5G3N0:documentation>Response object for cancelCheckOutFF operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:cancelCheckOutFFResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkOutAttachment">
+    <WL5G3N0:documentation>Request object for CheckOutAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:checkOutAttachment" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkOutAttachmentResponse">
+    <WL5G3N0:documentation>Response object for CheckOutAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:checkOutAttachmentResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkInAttachment">
+    <WL5G3N0:documentation>Request object for checkInAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:checkInAttachment" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="checkInAttachmentResponse">
+    <WL5G3N0:documentation>Response object for checkInAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:checkInAttachmentResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addFileFF">
+    <WL5G3N0:documentation>Request object for checkInAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:addFileFF" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="addFileFFResponse">
+    <WL5G3N0:documentation>Response object for checkInAttachment operation. </WL5G3N0:documentation>
+    <WL5G3N0:part element="attachment:addFileFFResponse" name="parameters"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="Attachment_PortType">
+    <WL5G3N0:operation name="getFileFF">
+      <WL5G3N0:documentation>
+	  getFileFF retrieves a list of files from a specific Agile file folder object.
+	  The request objects consist of specifications of the files to be retrieved while
+	  the response object provides comprehensive information about the files retrieved
+	  including content, file type, size, and row identifiers.	  
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getFileFF"/>
+      <WL5G3N0:output message="tns:getFileFFResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getFileAttachment">
+      <WL5G3N0:documentation>
+	  getFileAttachment retrieves a specific file from the attachment tab of a particular
+	  Agile object. The request object details the specifications of the file to be retrieved
+	  and the response object provides comprehensive information about the file retrieved.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:getFileAttachment"/>
+      <WL5G3N0:output message="tns:getFileAttachmentResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addFileAttachment">
+      <WL5G3N0:documentation>
+	  addFileAttachment is used to add a new file to the attachment tab of an Agile Object. 	  
+	  This is facilitated by specifying relevant details of the new file through the request
+	  object.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:addFileAttachment"/>
+      <WL5G3N0:output message="tns:addFileAttachmentResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkOutFF">
+      <WL5G3N0:documentation>
+	  checkOutFF is used to check out an Agile file folder object. The request object specifies 
+	  the file folder that has to be checked out and the success of the operation may be verified
+	  using the status code in the response object. Subsequent operations such as that of adding
+	  a file to this file folder and then checking the folder back in are possible after this step.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:checkOutFF"/>
+      <WL5G3N0:output message="tns:checkOutFFResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkInFF">
+      <WL5G3N0:documentation>
+	  checkInFF is used to check in an Agile file folder object. The request object specifies the
+	  file folder which has already been checked out and needs to be checked in by the webservice
+	  operation. Success of the operation may be verified using the status code in the response
+	  object.	  
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:checkInFF"/>
+      <WL5G3N0:output message="tns:checkInFFResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="cancelCheckOutFF">
+      <WL5G3N0:documentation>
+	  cancelCheckOutFF is used to cancel the 'checked-out' status of an Agile file File folder object
+	  which had been previously checked out by the checkout operation.The request object specifies the
+	  file folder for which the 'checked-out' status has to be anulled. Success of the operation may be
+	  verified using the status code in the response object.	 
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:cancelCheckOutFF"/>
+      <WL5G3N0:output message="tns:cancelCheckOutFFResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkOutAttachment">
+      <WL5G3N0:documentation>
+	  checkOutAttachment is used to check out a specific file from the attachment tab of an Agile object 
+	  and to retrieve the contents of the same in the process. The request object specifies the object
+	  and file to be retrieved while the desired content is received through the response object.
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:checkOutAttachment"/>
+      <WL5G3N0:output message="tns:checkOutAttachmentResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkInAttachment">
+      <WL5G3N0:documentation>
+	  checkInAttachment is used to check in an attachment that was previously checked out and possibly
+	  modified back into the Agile system. Details of the modified file and its content and the parent
+	  object are specified in the request object. Success of the operation may be verified using the
+	  status code in the response object.	 	  
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:checkInAttachment"/>
+      <WL5G3N0:output message="tns:checkInAttachmentResponse"/>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addFileFF">
+      <WL5G3N0:documentation>
+	  addFileFF is used to a new file to the files tab of an Agile File folder object. The request object
+	  specifies details of the file folder that was previously checked out to facilitate the add file process.
+	  Success of the operation may be verified using the status code in the response object.	 	  
+	  </WL5G3N0:documentation>
+      <WL5G3N0:input message="tns:addFileFF"/>
+      <WL5G3N0:output message="tns:addFileFFResponse"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="Attachment_Binding" type="tns:Attachment_PortType">
+    <wsp:Policy>
+      <wsp:PolicyReference URI="#AttachmentService_MTOM_Policy"/>
+      <wsp:PolicyReference URI="#Mtom.xml"/>
+    </wsp:Policy>
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="getFileFF">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="getFileAttachment">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addFileAttachment">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkOutFF">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkInFF">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="cancelCheckOutFF">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkOutAttachment">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="checkInAttachment">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+    <WL5G3N0:operation name="addFileFF">
+      <soap:operation/>
+      <WL5G3N0:input>
+        <soap:body use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <soap:body use="literal"/>
+      </WL5G3N0:output>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="AttachmentService">
+    <WL5G3N0:port binding="tns:Attachment_Binding" name="Attachment">
+      <soap:address location="http://agile.us.cray.com:80/CoreService/services/Attachment"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>
